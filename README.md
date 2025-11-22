@@ -1,71 +1,240 @@
-# 🔒 Orchestrateur d'Outils de Cybersécurité avec IA
+<div align="center">
 
-Un système d'intelligence artificielle qui interprète les demandes en langage naturel et orchestre automatiquement les outils de cybersécurité (nmap, iptables, dig, whois, tcpdump).
+# 🛡️ NetworkSearcherAI
 
-## 🤖 Intelligence Artificielle
+### 🤖 Orchestrateur d'Outils de Cybersécurité Propulsé par l'IA
 
-Ce système utilise de **vraies techniques d'IA** :
+[![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Claude AI](https://img.shields.io/badge/Claude-AI-FF6B6B?style=for-the-badge&logo=anthropic&logoColor=white)](https://www.anthropic.com/)
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com)
 
-- **Classification d'intention** : Utilise TF-IDF et embeddings sémantiques pour comprendre l'intention de l'utilisateur
-- **Extraction d'entités (NLP)** : Identifie automatiquement les IPs, domaines, ports, protocoles, etc.
-- **Scoring de confiance** : Évalue la probabilité que l'outil détecté soit le bon
-- **Compréhension contextuelle** : Analyse le contexte sémantique des mots-clés, actions et concepts
+**Parlez en français naturel, l'IA exécute vos commandes de cybersécurité** 🚀
+
+[Fonctionnalités](#-fonctionnalités) • [Installation](#-installation-rapide) • [Documentation](#-documentation) • [Contribuer](#-contribuer)
+
+---
+
+</div>
+
+## 📋 Table des Matières
+
+- [✨ Aperçu](#-aperçu)
+- [🎯 Fonctionnalités](#-fonctionnalités)
+- [🛠️ Technologies](#️-technologies)
+- [⚡ Installation Rapide](#-installation-rapide)
+- [🚀 Utilisation](#-utilisation)
+- [📖 Exemples](#-exemples)
+- [🏗️ Architecture](#️-architecture)
+- [🧠 Intelligence Artificielle](#-intelligence-artificielle)
+- [🔧 Configuration](#-configuration)
+- [📊 Outils Supportés](#-outils-supportés)
+- [🤝 Contribuer](#-contribuer)
+- [⚠️ Sécurité & Légalité](#️-sécurité--légalité)
+- [📄 Licence](#-licence)
+
+---
+
+## ✨ Aperçu
+
+**NetworkSearcherAI** est un orchestrateur intelligent qui transforme vos demandes en langage naturel en commandes de cybersécurité exécutables. Plus besoin de mémoriser les syntaxes complexes de `nmap`, `iptables`, `tshark` ou autres outils - **parlez simplement, l'IA comprend et exécute**.
+
+### 🎬 Démonstration
+
+```bash
+# Au lieu de taper :
+nmap -A -sV -O -Pn 192.168.1.20
+
+# Dites simplement :
+python orchestrator.py "scan cette IP 192.168.1.20 et trouve tout ce qui est utile"
+```
+
+### 🌟 Points Forts
+
+- 🧠 **IA Avancée** : Utilise Claude API ou un moteur NLP local (TF-IDF + embeddings)
+- 🎨 **Interface Moderne** : CLI animée avec Rich pour une expérience utilisateur premium
+- 🔍 **Détection Automatique** : Identifie l'outil approprié même sans le mentionner explicitement
+- 🛡️ **Sécurisé** : Mode simulation pour tester sans risque
+- ⚡ **Auto-installation** : Détecte et installe automatiquement les outils manquants
+- 🌍 **Français Natif** : Comprend parfaitement le français naturel
+
+---
 
 ## 🎯 Fonctionnalités
 
-- **Interprétation naturelle avec IA** : Comprend les instructions en français grâce au NLP
-- **Détection automatique intelligente** : Identifie l'outil approprié même si non explicitement mentionné
-- **Génération de commandes** : Crée les commandes CLI exactes et optimisées
-- **Exécution sécurisée** : Exécute les commandes avec gestion d'erreurs
-- **Analyse intelligente** : Interprète les résultats et fournit des recommandations
+### 🤖 Intelligence Artificielle
 
-## 📦 Installation
+| Fonctionnalité | Description |
+|----------------|-------------|
+| **Classification d'Intention** | Utilise TF-IDF et embeddings sémantiques pour comprendre l'intention |
+| **Extraction d'Entités (NLP)** | Identifie automatiquement IPs, domaines, ports, protocoles, etc. |
+| **Scoring de Confiance** | Évalue la probabilité que l'outil détecté soit le bon |
+| **Compréhension Contextuelle** | Analyse le contexte sémantique des mots-clés et actions |
 
-### Prérequis
+### 🎨 Interface Utilisateur
 
-Les outils suivants doivent être installés sur votre système :
+- ✨ **CLI Animée** : Interface terminal moderne avec animations et couleurs
+- 📊 **Affichage Structuré** : Résultats formatés avec Rich (panels, syntax highlighting)
+- 🔄 **Mode Interactif** : Session continue pour exécuter plusieurs commandes
+- 🎯 **Mode Simulation** : Testez vos commandes sans les exécuter réellement
 
-- **nmap** : `sudo apt-get install nmap` (Linux) ou `brew install nmap` (macOS)
-- **iptables** : Généralement pré-installé sur Linux
-- **dig** : `sudo apt-get install dnsutils` (Linux) ou `brew install bind` (macOS)
-- **whois** : `sudo apt-get install whois` (Linux) ou `brew install whois` (macOS)
-- **tcpdump** : `sudo apt-get install tcpdump` (Linux) ou `brew install tcpdump` (macOS)
+### 🔧 Fonctionnalités Techniques
 
-### Installation Python
+- 🔄 **Auto-détection d'outils** : Détecte et installe automatiquement les dépendances
+- 🛡️ **Gestion d'erreurs** : Gestion robuste des erreurs avec messages clairs
+- 📝 **Génération de commandes** : Crée des commandes optimisées et sécurisées
+- 🔍 **Analyse intelligente** : Interprète les résultats et fournit des recommandations
+
+---
+
+## 🛠️ Technologies
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=flat-square&logo=python&logoColor=white)
+![Anthropic Claude](https://img.shields.io/badge/Claude-AI-FF6B6B?style=flat-square)
+![Rich](https://img.shields.io/badge/Rich-CLI-FFB84D?style=flat-square)
+![Nmap](https://img.shields.io/badge/Nmap-Security-FF6B6B?style=flat-square)
+![Tshark](https://img.shields.io/badge/Tshark-Capture-1E88E5?style=flat-square)
+
+</div>
+
+### Stack Technique
+
+- **Langage** : Python 3.7+
+- **IA** : Anthropic Claude API (optionnel) + Moteur NLP local
+- **Interface** : Rich (CLI moderne)
+- **Outils** : Nmap, Iptables, Tshark/Tcpdump, Dig, Whois
+- **NLP** : TF-IDF, Extraction d'entités, Classification sémantique
+
+---
+
+## ⚡ Installation Rapide
+
+### 📦 Prérequis
+
+Assurez-vous d'avoir Python 3.7+ installé :
 
 ```bash
-# Cloner ou télécharger le projet
-cd AI
-
-# Python 3.7+ requis (vérifier avec python3 --version)
-# Aucune dépendance externe requise (utilise uniquement la bibliothèque standard)
+python3 --version
 ```
+
+### 🚀 Installation en 3 Étapes
+
+#### 1️⃣ Cloner le Repository
+
+```bash
+git clone https://github.com/votre-username/NetworkSearcherAI.git
+cd NetworkSearcherAI
+```
+
+#### 2️⃣ Installer les Dépendances Python
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 3️⃣ Configurer l'API Claude (Optionnel)
+
+Créez un fichier `config.json` :
+
+```json
+{
+  "claude_api_key": "votre_cle_api_anthropic"
+}
+```
+
+> 💡 **Note** : Le système fonctionne aussi sans Claude API en utilisant le moteur NLP local.
+
+### 🔧 Installation des Outils Système
+
+Le système peut installer automatiquement les outils manquants, ou vous pouvez les installer manuellement :
+
+<details>
+<summary><b>🐧 Linux (Debian/Ubuntu)</b></summary>
+
+```bash
+sudo apt-get update
+sudo apt-get install -y nmap iptables tshark dnsutils whois tcpdump
+```
+
+</details>
+
+<details>
+<summary><b>🍎 macOS</b></summary>
+
+```bash
+brew install nmap tshark bind whois tcpdump
+```
+
+</details>
+
+<details>
+<summary><b>🪟 Windows</b></summary>
+
+```powershell
+# Utilisez WSL ou installez les outils individuellement
+# Nmap: https://nmap.org/download.html
+# Wireshark (inclut tshark): https://www.wireshark.org/download.html
+```
+
+</details>
+
+---
 
 ## 🚀 Utilisation
 
-### Mode interactif
+### 🎯 Mode Interactif (Recommandé)
+
+Lancez une session interactive :
 
 ```bash
-python3 orchestrator.py
+python orchestrator.py --interactive
+# ou
+python orchestrator.py -i
 ```
 
-Puis entrez vos commandes au format :
+Vous pouvez ensuite taper vos commandes naturellement :
+
 ```
-[outil] : [instruction] : [paramètres]
+> scan cette IP 192.168.1.20
+> capture le trafic DNS pendant 10 secondes
+> bloque cette IP 1.2.3.4
 ```
 
-### Mode ligne de commande
+### 💻 Mode Ligne de Commande
+
+Exécutez une commande unique :
 
 ```bash
-python3 orchestrator.py "nmap : je veux analyser tout ce qu'il y a d'utile dans cette IP : 192.168.1.20"
+python orchestrator.py "scan cette IP 192.168.1.20 et trouve tous les ports ouverts"
 ```
 
-## 📝 Exemples d'utilisation
+### 🧪 Mode Simulation
 
-### Nmap - Scan complet d'une IP
+Testez vos commandes sans les exécuter :
 
+```bash
+python orchestrator.py --simulate "bloque cette IP 1.2.3.4"
 ```
-nmap : je veux analyser tout ce qu'il y a d'utile dans cette IP : 192.168.1.20
+
+### 📋 Options Disponibles
+
+| Option | Description |
+|--------|-------------|
+| `--interactive` / `-i` | Lance le mode interactif |
+| `--simulate` / `--sim` | Mode simulation (pas d'exécution réelle) |
+| `--help` / `-h` | Affiche l'aide |
+
+---
+
+## 📖 Exemples
+
+### 🔍 Nmap - Scan de Réseau
+
+**Commande naturelle :**
+```bash
+python orchestrator.py "scan cette IP 192.168.1.20 et trouve tout ce qui est utile"
 ```
 
 **Commande générée :**
@@ -73,10 +242,19 @@ nmap : je veux analyser tout ce qu'il y a d'utile dans cette IP : 192.168.1.20
 nmap -A -sV -O -Pn 192.168.1.20
 ```
 
-### Iptables - Bloquer les connexions entrantes sauf SSH
+**Résultat :**
+- ✅ Détection OS
+- ✅ Version des services
+- ✅ Scripts NSE
+- ✅ Analyse complète
 
-```
-iptables : bloque toutes les connexions entrantes sauf via SSH
+---
+
+### 🛡️ Iptables - Configuration Firewall
+
+**Commande naturelle :**
+```bash
+python orchestrator.py "bloque toutes les connexions entrantes sauf SSH"
 ```
 
 **Commande générée :**
@@ -85,21 +263,27 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A INPUT -j DROP
 ```
 
-### Whois - Analyser un domaine
+---
 
-```
-whois : analyse ce domaine : example.com
+### 📡 Tshark - Capture de Trafic
+
+**Commande naturelle :**
+```bash
+python orchestrator.py "capture le trafic DNS pendant 10 secondes"
 ```
 
 **Commande générée :**
 ```bash
-whois example.com
+sudo tshark -i any -f "udp port 53" -a duration:10
 ```
 
-### Dig - Requête DNS
+---
 
-```
-dig : résolution DNS pour google.com
+### 🌐 Dig - Requête DNS
+
+**Commande naturelle :**
+```bash
+python orchestrator.py "résous le DNS pour google.com"
 ```
 
 **Commande générée :**
@@ -107,131 +291,228 @@ dig : résolution DNS pour google.com
 dig A google.com +noall +answer
 ```
 
-### Tcpdump - Capture DNS
+---
 
-```
-tcpdump : capture le trafic dns sur 10 secondes
+### 🔎 Whois - Informations Domaine
+
+**Commande naturelle :**
+```bash
+python orchestrator.py "analyse ce domaine example.com"
 ```
 
 **Commande générée :**
 ```bash
-sudo tcpdump -i any udp port 53 -n -v -G 10 -W 1
+whois example.com
 ```
 
-## 📌 Format de réponse
+---
 
-Chaque exécution génère un rapport en 3 parties :
-
-### 1. Commande générée
-La commande exacte qui sera/serait exécutée
-
-### 2. Résultat
-- Résumé lisible
-- Détails importants (ports, services, etc.)
-- Sortie brute de l'outil
-
-### 3. Analyse synthétique
-- Interprétation technique
-- Risques identifiés
-- Recommandations de sécurité
-
-## 🛠️ Outils supportés
-
-| Outil | Description | Détection automatique |
-|-------|-------------|----------------------|
-| **nmap** | Scan de ports et services | ✅ |
-| **iptables** | Configuration firewall | ✅ |
-| **dig** | Requêtes DNS | ✅ |
-| **whois** | Informations domaine/IP | ✅ |
-| **tcpdump** | Capture de trafic réseau | ✅ |
-
-## ⚠️ Sécurité et légalité
-
-- **Privilèges** : Certaines commandes nécessitent `sudo` (notamment iptables et tcpdump)
-- **Autorisation** : Assurez-vous d'avoir l'autorisation légale avant d'analyser des systèmes tiers
-- **Test uniquement** : Utilisez uniquement sur vos propres systèmes ou avec autorisation explicite
-- **Pas de destruction** : Le système ne génère jamais de commandes destructives
-
-## 🔧 Architecture
+## 🏗️ Architecture
 
 ```
-orchestrator.py          # Point d'entrée principal
-├── ai_engine.py         # 🤖 Moteur d'IA (classification + extraction)
-│   ├── IntentClassifier # Classification d'intention avec TF-IDF
-│   ├── EntityExtractor  # Extraction d'entités (NLP)
-│   └── AIEngine         # Orchestrateur IA
-├── tools/
-│   ├── __init__.py
-│   ├── base_tool.py     # Classe de base abstraite
-│   ├── nmap_tool.py     # Module nmap
-│   ├── iptables_tool.py # Module iptables
-│   ├── dig_tool.py      # Module dig
-│   ├── whois_tool.py    # Module whois
-│   └── tcpdump_tool.py  # Module tcpdump
+NetworkSearcherAI/
+│
+├── 🎯 orchestrator.py          # Point d'entrée principal
+│
+├── 🤖 ai_engine.py             # Moteur IA local (TF-IDF + NLP)
+│   ├── IntentClassifier        # Classification d'intention
+│   ├── EntityExtractor         # Extraction d'entités
+│   └── AIEngine                # Orchestrateur IA
+│
+├── 🧠 ai/
+│   └── claude_api.py           # Intégration Claude API
+│
+├── 🔧 core/
+│   ├── parsing.py              # Analyse des commandes
+│   ├── dispatcher.py           # Dispatch vers les handlers
+│   └── package_manager.py      # Gestion des packages
+│
+├── 🎨 interfaces/
+│   ├── cli_animated.py         # CLI moderne avec Rich
+│   └── cli.py                  # CLI basique
+│
+└── 🛠️ tools/
+    ├── base_tool.py            # Classe de base abstraite
+    ├── base_handler.py         # Handler de base
+    ├── nmap_handler.py         # Handler Nmap
+    ├── iptables_handler.py     # Handler Iptables
+    ├── tshark_handler.py       # Handler Tshark
+    ├── dig_tool.py             # Outil Dig
+    └── whois_tool.py           # Outil Whois
 ```
 
-## 🧠 Comment l'IA fonctionne
+### 🔄 Flux d'Exécution
 
-### Classification d'intention
+```mermaid
+graph TD
+    A[Utilisateur: Commande Naturelle] --> B[CommandParser]
+    B --> C{Claude API?}
+    C -->|Oui| D[Claude API]
+    C -->|Non| E[AIEngine Local]
+    D --> F[ParsedCommand]
+    E --> F
+    F --> G[CommandDispatcher]
+    G --> H{Type d'Outil}
+    H -->|Nmap| I[NmapHandler]
+    H -->|Iptables| J[IptablesHandler]
+    H -->|Tshark| K[TsharkHandler]
+    I --> L[Exécution]
+    J --> L
+    K --> L
+    L --> M[Résultat Formaté]
+    M --> N[Affichage Rich CLI]
+```
+
+---
+
+## 🧠 Intelligence Artificielle
+
+### 🎯 Comment ça Fonctionne ?
+
+#### 1. Classification d'Intention
+
 Le système utilise des **embeddings sémantiques** et **TF-IDF** pour classer l'intention :
-- Analyse les mots-clés, actions et contexte
-- Calcule un score de confiance pour chaque outil
-- Choisit l'outil avec le score le plus élevé
 
-### Extraction d'entités
-Utilise du **NLP (Natural Language Processing)** pour extraire :
-- Adresses IP
-- Domaines
-- Ports
-- Protocoles (TCP, UDP, DNS, HTTP, etc.)
-- Durées
-- Interfaces réseau
-
-### Exemple de fonctionnement IA
-
-```
+```python
 Input: "Je veux scanner tous les ports ouverts de cette machine 192.168.1.20"
 
-IA analyse:
-- Mots-clés: "scanner", "ports", "ouverts" → score nmap: 0.85
-- Action: "scanner" → score nmap: 0.90
-- Contexte: "machine", "réseau" → score nmap: 0.80
-- Entité extraite: IP = 192.168.1.20
-
-Résultat: nmap avec confiance 0.87
+Analyse IA:
+├── Mots-clés: "scanner", "ports", "ouverts" → score nmap: 0.85
+├── Action: "scanner" → score nmap: 0.90
+├── Contexte: "machine", "réseau" → score nmap: 0.80
+└── Résultat: nmap avec confiance 0.87
 ```
 
-## 📚 Extensibilité
+#### 2. Extraction d'Entités
 
-Pour ajouter un nouvel outil :
+Utilise du **NLP (Natural Language Processing)** pour extraire :
 
-1. Créer un nouveau fichier dans `tools/` (ex: `tools/newtool_tool.py`)
-2. Hériter de `BaseTool`
-3. Implémenter `generate_command()` et `execute()`
-4. Ajouter l'outil dans `orchestrator.py` (dictionnaire `self.tools` et patterns)
+- ✅ Adresses IP (`192.168.1.20`)
+- ✅ Domaines (`example.com`)
+- ✅ Ports (`22`, `80`, `443`)
+- ✅ Protocoles (`TCP`, `UDP`, `DNS`, `HTTP`)
+- ✅ Durées (`10 secondes`, `5 minutes`)
+- ✅ Interfaces réseau (`eth0`, `wlan0`, `any`)
 
-## 🐛 Dépannage
+#### 3. Génération de Commande
 
-**Erreur "outil non trouvé"** :
-- Vérifiez que l'outil est installé : `which nmap`
-- Vérifiez qu'il est dans le PATH
+Combine l'intention et les entités pour générer la commande optimale :
 
-**Erreur de permissions** :
-- Certaines commandes nécessitent sudo
-- Le système vous avertira si c'est le cas
+```python
+Intention: nmap (confiance: 0.87)
+Entités: {ip: "192.168.1.20", action: "scan complet"}
+→ Commande: nmap -A -sV -O -Pn 192.168.1.20
+```
 
-**Commande non reconnue** :
-- Utilisez le format : `[outil] : [instruction] : [paramètres]`
-- Ou laissez le système détecter automatiquement l'outil
+### 🔄 Modes d'IA
+
+| Mode | Description | Avantages |
+|------|-------------|-----------|
+| **Claude API** | Utilise Anthropic Claude | Compréhension contextuelle avancée |
+| **NLP Local** | Moteur TF-IDF + Extraction | Rapide, pas de dépendance externe |
+
+---
+
+## 🔧 Configuration
+
+### 📝 Fichier `config.json`
+
+```json
+{
+  "claude_api_key": "sk-ant-api03-..."
+}
+```
+
+### 🔑 Obtenir une Clé API Claude
+
+1. Visitez [console.anthropic.com](https://console.anthropic.com)
+2. Créez un compte ou connectez-vous
+3. Générez une clé API
+4. Ajoutez-la dans `config.json`
+
+> ⚠️ **Sécurité** : Ne commitez jamais votre `config.json` avec votre clé API réelle !
+
+---
+
+## 📊 Outils Supportés
+
+| Outil | Description | Détection Auto | Exemple |
+|-------|-------------|----------------|---------|
+| **🔍 Nmap** | Scan de ports et services | ✅ | "scan cette IP 192.168.1.1" |
+| **🛡️ Iptables** | Configuration firewall | ✅ | "bloque cette IP 1.2.3.4" |
+| **📡 Tshark** | Capture de trafic réseau | ✅ | "capture le trafic DNS" |
+| **🌐 Dig** | Requêtes DNS | ✅ | "résous google.com" |
+| **🔎 Whois** | Informations domaine/IP | ✅ | "analyse example.com" |
+| **📦 Tcpdump** | Capture de paquets | ✅ | "capture les paquets" |
+
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! 🎉
+
+### 🚀 Comment Contribuer ?
+
+1. **Fork** le projet
+2. **Créez** une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. **Commitez** vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
+5. **Ouvrez** une Pull Request
+
+### 📋 Guidelines
+
+- ✨ Ajoutez des tests pour les nouvelles fonctionnalités
+- 📝 Documentez votre code
+- 🎨 Suivez le style de code existant
+- ✅ Assurez-vous que tous les tests passent
+
+### 🐛 Signaler un Bug
+
+Ouvrez une [issue](https://github.com/votre-username/NetworkSearcherAI/issues) avec :
+- Description du bug
+- Steps to reproduce
+- Comportement attendu vs actuel
+- Environnement (OS, Python version)
+
+---
+
+## ⚠️ Sécurité & Légalité
+
+### 🛡️ Avertissements Importants
+
+- ⚠️ **Privilèges** : Certaines commandes nécessitent `sudo` (iptables, tcpdump, tshark)
+- ⚖️ **Autorisation** : Assurez-vous d'avoir l'autorisation légale avant d'analyser des systèmes tiers
+- 🧪 **Test uniquement** : Utilisez uniquement sur vos propres systèmes ou avec autorisation explicite
+- 🚫 **Pas de destruction** : Le système ne génère jamais de commandes destructives
+
+### 📜 Responsabilité
+
+Ce projet est fourni à des fins **éducatives et de test**. L'utilisation de ce logiciel pour analyser des systèmes sans autorisation est **illégale** et peut entraîner des poursuites pénales.
+
+**Utilisez de manière responsable et légale.** ⚖️
+
+---
 
 ## 📄 Licence
 
-Ce projet est fourni à des fins éducatives et de test. Utilisez de manière responsable et légale.
+Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## 🤝 Contribution
+---
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-- Ajouter de nouveaux outils
-- Améliorer la détection automatique
-- Enrichir l'analyse des résultats
+## 🙏 Remerciements
 
+- [Anthropic](https://www.anthropic.com/) pour Claude API
+- [Rich](https://github.com/Textualize/rich) pour l'interface CLI moderne
+- La communauté open-source pour les outils de cybersécurité
+
+---
+
+<div align="center">
+
+### ⭐ Si ce projet vous plaît, n'hésitez pas à lui donner une étoile ! ⭐
+
+**Fait avec ❤️ par la communauté**
+
+[⬆ Retour en haut](#-networksearcherai)
+
+</div>
