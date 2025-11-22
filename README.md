@@ -124,7 +124,7 @@ python3 --version
 #### 1️⃣ Cloner le Repository
 
 ```bash
-git clone https://github.com/votre-username/NetworkSearcherAI.git
+git clone https://github.com/MedusaSH/NetworkSearcherAI.git
 cd NetworkSearcherAI
 ```
 
@@ -468,7 +468,7 @@ Les contributions sont les bienvenues ! 🎉
 
 ### 🐛 Signaler un Bug
 
-Ouvrez une [issue](https://github.com/votre-username/NetworkSearcherAI/issues) avec :
+Ouvrez une [issue](https://github.com/MedusaSH/NetworkSearcherAI/issues) avec :
 - Description du bug
 - Steps to reproduce
 - Comportement attendu vs actuel
